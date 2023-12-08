@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_transparent">#66000000</color>
+    <color name="gray">#747D8C</color>
+    <color name="background">#1E1E1E</color>
+    <color name="custom_secondary">#FF8F00</color>
+    <color name="custom_secondary_light">#FFD299</color>
+    <color name="yellow">#FFD600</color>
+    <color name="blue_light">#0075FF</color>
+    <color name="bg_login">#FFD600</color>
+    <color name="bgapp">#112A46</color>
+    <color name="blue_dark">#EE112A46</color>
+    <color name="blue_dark_card">#112A46</color>
+</resources>

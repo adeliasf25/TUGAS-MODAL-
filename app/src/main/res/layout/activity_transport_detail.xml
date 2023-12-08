@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransportDetail"
+    android:background="@color/blue_dark_card"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:src="@drawable/garuda_plane"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/transport_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/transport_profile_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trans_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:text="Garuda Indonesia adalah perusahaan penerbangan nasional yang dimiliki oleh indonesia serta maskapai pertama dan terbesar yang ada di Indonesia, Dengan tujuan serta pendekatan yang berorientasi untuk“melayani”. Memiliki 3 jenis kelas yaitu:
+\n1. First Class
+\n2. Business Class
+\n3. Economy Class"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transport_banner"/>
+
+
+    <TextView
+        android:id="@+id/tv_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trans_text"
+        app:layout_constraintEnd_toStartOf="@id/tv_tujuan"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_tujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="Tujuan"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/tv_lokasi"
+            app:layout_constraintStart_toEndOf="@id/tv_lokasi"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        <EditText
+            android:id="@+id/lokasi_et"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search_background"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tv_lokasi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tujuan_et"/>
+        <EditText
+            android:id="@+id/tujuan_et"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/search_background"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tv_tujuan"
+            app:layout_constraintStart_toEndOf="@id/lokasi_et"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Buka di Aplikasi"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:shadowDy="4"
+        android:shadowDx="1"
+        android:shadowRadius="2"
+        android:background="@drawable/login_btn"
+        app:layout_constraintTop_toBottomOf="@id/lokasi_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

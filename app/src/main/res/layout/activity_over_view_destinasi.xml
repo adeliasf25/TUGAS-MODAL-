@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverViewDestinasiActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/overview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="35dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/over"
+                android:layout_width="329dp"
+                android:layout_height="129dp"
+                android:layout_marginBottom="400dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desa Petingsari"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yogyakarta"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="225dp"
+                    android:drawableLeft="@drawable/maps"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/star"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500+ Ratting"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="360 Tour"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="130dp"
+                    android:drawableTop="@drawable/tour"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22,5 KM"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="240dp"
+                    android:drawableLeft="@drawable/ppk"
+                    android:gravity="center"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/textnav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="55dp"
+                app:layout_constraintTop_toBottomOf="@+id/over"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/textnav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="65dp"
+                app:layout_constraintTop_toBottomOf="@+id/over"
+                app:layout_constraintStart_toEndOf="@id/textnav"
+                app:layout_constraintEnd_toStartOf="@id/textnav2"/>
+            <TextView
+                android:id="@+id/textnav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="65dp"
+                app:layout_constraintTop_toBottomOf="@+id/over"
+                app:layout_constraintStart_toEndOf="@id/textnav1"/>
+            <ImageView
+                android:id="@+id/navOver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/nav_des"
+                app:layout_constraintTop_toBottomOf="@+id/textnav"
+                android:layout_marginTop="12dp"
+                />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="303dp"
+                app:layout_constraintTop_toBottomOf="@id/navOver"
+                tools:layout_editor_absoluteX="-4dp" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textdeskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Desa Wisata Pentingsari terletak sekitar 11 kilometer dari puncak Gunung Merapi. Kamu bisa menempuh jarak sejauh 22,5 kilometer dari pusat Kota Yogyakarta. Desa wisata ini memiliki perjalanan cukup panjang sebelum berkembang seperti sekarang. Masyarakat setempat masih mempertahankan kearifan lokal dan gotong royong..MORE"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/textdeskripsi"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginStart="8dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="Gallery"/>
+                    <TextView
+                        android:id="@+id/ViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/textdeskripsi"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginEnd="18dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="Gallery"
+                        android:drawableRight="@drawable/next"
+                        android:drawablePadding="5dp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toBottomOf="@+id/gallery"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/fto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/ftov1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/fto2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/fto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ftov2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/fto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/ftov3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/fto2"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

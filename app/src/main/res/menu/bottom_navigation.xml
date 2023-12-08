@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/icon_home"
+        android:title="Home"
+        />
+    <item android:id="@+id/nav_money"
+        android:icon="@drawable/icon_destinasi"
+        android:title="Destinasi"
+        />
+    <item android:id="@+id/nav_product"
+        android:icon="@drawable/icon_paket_liburan"
+        android:title="Paket Liburan"
+        />
+    <item android:id="@+id/akun"
+        android:icon="@drawable/icon_akun"
+        android:title="Akun"
+        />
+
+
+</menu>
